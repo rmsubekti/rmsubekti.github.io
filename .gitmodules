@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-text"]
+	path = themes/hugo-theme-text
+	url = git@github.com:rmsubekti/hugo-theme-text.git

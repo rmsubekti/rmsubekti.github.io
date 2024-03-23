@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: kaoskuki
+      POSTGRES_PASSWORD: KaosKuki*password*
+
+  kaoskuki:
+    image: rmsubekti/kaoskuki:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: kaoskuki # Same as postgres environment
+      POSTGRES_PASSWORD: KaosKuki*password* # Same as postgres environment
+      POSTGRES_HOSTNAME: db
+    ports:
+      - 80:80
+    depends_on:
+      - db 

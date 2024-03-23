@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: epicpaste
+      POSTGRES_PASSWORD: EpicPaste*password*
+
+  epicpaste:
+    image: rmsubekti/epicpaste:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: epicpaste # Same as postgres environment
+      POSTGRES_PASSWORD: EpicPaste*password* # Same as postgres environment
+      POSTGRES_HOSTNAME: db
+      EPIC_HOSTNAME: localhost #192.168.192.199 or domainname.com
+    ports:
+      - 80:80
+    depends_on:
+      - db

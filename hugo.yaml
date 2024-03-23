@@ -1,0 +1,5 @@
+baseURL: https://rmsubekti.github.io/
+languageCode: id-ID
+title: Rahmat Subekti
+
+theme: hugo-theme-text
