@@ -1,5 +1,6 @@
 baseURL: https://rmsubekti.github.io/
 languageCode: id-ID
 title: Rahmat Subekti
-
+params:
+  canonical: https://rmsubekti.github.io
 theme: hugo-theme-text

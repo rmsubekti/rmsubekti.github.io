@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: blogo
+      POSTGRES_PASSWORD: blogo-00BC7ddAa54cpB
+
+  epicpaste:
+    image: registry/gitlab.com/rmsubekti/blogo:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: blogo # Same as postgres environment
+      POSTGRES_PASSWORD: blogo-00BC7ddAa54cpB # Same as postgres environment
+      POSTGRES_HOSTNAME: db
+      HOSTNAME: localhost #192.168.192.199 or domainname.com
+    ports:
+      - 80:80
+    depends_on:
+      - db
