@@ -5,15 +5,15 @@ services:
     image: postgres:latest
     restart: always
     environment:
-      POSTGRES_DB: blogoxb
-      POSTGRES_PASSWORD: 'blogo-00BC7ddAa54cpB'
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: blogo-00BC7ddAa54cpB*
 
   blogo:
     image: rmsubekti/blogo:master
     restart: unless-stopped
     environment:
-      POSTGRES_DB: blogoxb # Same as postgres environment
-      POSTGRES_PASSWORD: 'blogo-00BC7ddAa54cpB' # Same as postgres environment
+      POSTGRES_DB: postgres # Same as postgres environment
+      POSTGRES_PASSWORD: blogo-00BC7ddAa54cpB* # Same as postgres environment
       POSTGRES_HOSTNAME: db
       HOSTNAME: localhost #192.168.192.199 or domain.com
     ports:
