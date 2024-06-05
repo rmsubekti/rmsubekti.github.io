@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: blogo-00BC7ddAa54cpB
 
   epicpaste:
-    image: rmsubekti/blogo:latest
+    image: rmsubekti/blogo:master
     restart: unless-stopped
     environment:
       POSTGRES_DB: blogo # Same as postgres environment
