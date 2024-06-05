@@ -5,6 +5,7 @@ services:
     image: postgres:latest
     restart: always
     environment:
+      POSTGRES_USER: X3blogo
       POSTGRES_DB: blogo
       POSTGRES_PASSWORD: 'blogo-00BC7ddAa54cpB'
 
@@ -12,6 +13,7 @@ services:
     image: rmsubekti/blogo:master
     restart: unless-stopped
     environment:
+      POSTGRES_USER: X3blogo
       POSTGRES_DB: blogo # Same as postgres environment
       POSTGRES_PASSWORD: 'blogo-00BC7ddAa54cpB' # Same as postgres environment
       POSTGRES_HOSTNAME: db
