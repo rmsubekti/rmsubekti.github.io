@@ -15,7 +15,7 @@ services:
       POSTGRES_DB: blogo # Same as postgres environment
       POSTGRES_PASSWORD: blogo-00BC7ddAa54cpB # Same as postgres environment
       POSTGRES_HOSTNAME: db
-      HOSTNAME: localhost #192.168.192.199 or domainname.com
+      HOSTNAME: localhost #192.168.192.199 or domain.com
     ports:
       - 80:80
     depends_on:
