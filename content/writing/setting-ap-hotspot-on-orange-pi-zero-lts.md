@@ -1,5 +1,5 @@
 ---
-title: "Setting Ap Hotspot on Orange Pi Zero Lts"
+title: "Setting Ap Hotspot on Orange Pi Zero LTS"
 date: 2024-06-08T03:48:29+07:00
 draft: true
 ---
