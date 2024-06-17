@@ -2,4 +2,4 @@
 title: About
 type: page
 ---
-Hello world
+Hello World
