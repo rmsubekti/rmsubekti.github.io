@@ -60,4 +60,4 @@ For other configuration see [`rmsubekti/kaoskuki` on the dockerhub](https://hub.
 In order for users to register an account, you need to change the configuration in the Email configuration tab as shown in the image above. At least by changing the website domain name `localhost` to the domain name used to serve this website.
 
 ## Demo Video 
-{{< youtube bBDSzrWPv6s >}}
+{{< youtube JQF-GeUisTI >}}

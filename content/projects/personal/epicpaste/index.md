@@ -67,5 +67,5 @@ sed -i -e "s/localhost/$domain/g" compose.yml && docker compose up
 
 
 ## Demo Video 
-{{< youtube jihSCat5e3U >}}
+{{< youtube _OqMpYwTRpY >}}
 
